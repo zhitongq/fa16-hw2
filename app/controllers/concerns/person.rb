@@ -4,25 +4,25 @@ class Person
   def initialize(name, age)
     @name = name
     @age = age
+    @nickname = name[0..3]
   end
 
   def nickname
-    # YOUR IMPLEMENTATION HERE
-    'nickname'
+    @nickname
   end
 
   def birth_year
-    # YOUR IMPLEMENTATION HERE
-    1990
+    2016 - @age.to_i
   end
 
   def introduction
-    # YOUR IMPLEMENTATION HERE
-    'introduce'
+    "Name: " + @name + " Age: " + @age 
   end
 
   def fib_number
-    # YOUR IMPLMENTATION HERE
-    0
+    n = @age.to_i
+    new, old = 1, 0
+    n.times {new, old = new + old, new}
+    old
   end
 end

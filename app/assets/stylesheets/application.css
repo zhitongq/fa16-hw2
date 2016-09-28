@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    background-image: url(assets/images/Glencoe.jpg);
+}
+
+h2 {
+    color: white;
+    background-color: green;
+}
+fun {
+    color: red;
+}
+
+p {
+    color: yellow;
+}
